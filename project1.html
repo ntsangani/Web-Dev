@@ -20,7 +20,13 @@
 
 <body 
 
-<div style="background-image: url('hut.jpg');">
+
+
+    <div class="bg"></div>
+
+    
+
+</body>
 
 
 
@@ -65,6 +71,63 @@
         </div>
 
        </div>
+       <!-- Modal -->
+<button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Add User</button>
+<div id="myModal" class="modal fade" role="dialog">
+<div class="modal-dialog">
+<!-- Modal content-->
+<div class="modal-content">
+<div class="modal-header">
+<button type="button" class="close" data-dismiss="modal">&times;</button>
+<h4 class="modal-title">New User!</h4>
+</div>
+<div class="modal-body">
+<form>
+<div class="form-group">
+<label for="fullname">Full name:</label>
+<input type="fullname" class="form-control" id="fullname">
+</div>
+<div class="form-group">
+<label for="email">Email address:</label>
+<input type="email" class="form-control" id="email">
+</div>
+<div class="form-group">
+<label for="cellnumber">Cell number:</label>
+<input type="cellnumber" class="form-control" id="cellnumber">
+</div>
+<div class="form-group">
+<label for="landline">Landline number:</label>
+<input type="landline" class="form-control" id="landline">
+</div>
+<div class="form-group">
+<label for="home">Home address:</label>
+<input type="home" class="form-control" id="home">
+</div>
+<div class="form-group">
+<label for="kin">Next of kin:</label>
+<input type="kin" class="form-control" id="kin">
+</div>
+<div class="form-group">
+<label for="nk">Next of kin relationship:</label>
+<input type="nk" class="form-control" id="nk">
+</div>
+<div class="form-group">
+<label for="kino">Next of kin(number):</label>
+<input type="kino" class="form-control" id="kino">
+</div>
+<div class="form-group">
+<label for="kin">Next of kin(email address):</label>
+<input type="kin" class="form-control" id="kin">
+</div>
+<button type="submit" class="btn btn-success">Submit</button>
+</form>
+</div>
+<div class="modal-footer">
+<button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+</div>
+  </div>
+   </div>
+     <!--Card-->
 
       </div>
 
@@ -84,14 +147,15 @@
                 <p class="card-text">Landline: 021 102 8835.</p>
 
                 <p class="card-text"><small class="text-muted">Author-Poet</small></p>
+                
                     <!-- Button to Open the Modal -->
-<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">
+   <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">
     Delete Card
   </button>
   <!-- The Modal -->
-  <div class="modal" id="myModal">
-    <div class="modal-dialog">
-      <div class="modal-content">
+    <div class="modal" id="myModal">
+      <div class="modal-dialog">
+        <div class="modal-content">
         <!-- Modal Header -->
         <div class="modal-header">
           <h4 class="modal-title">Delete</h4>
@@ -105,10 +169,23 @@
         <div class="modal-footer">
           <button type="button" class="btn btn-danger" >Delete Card</button>
           <button type="button" class="btn btn-danger" data-dismiss="modal">Cancel</button>
+          </div>
         </div>
       </div>
+    </div> <!--last-->
+
+  <!--Drop down button-->
+  <div class="dropdown">
+    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+      Dropdown button
+    </button>
+    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+      <a class="dropdown-item" href="#">● User’s home address: 22 sakwatsha street, Philliphi</a>
+      <a class="dropdown-item" href="#">● User’s next of kin name: Asanda</a>
+      <a class="dropdown-item" href="#">● User’s next of kin relationship: Mother</a>
+      <a class="dropdown-item" href="#">● User’s next of kin cellphone number: 075 225 6669    Email:asanda@gmail.com </a>
     </div>
-  </div> <!--last-->
+  </div>
 
 
              </div>
@@ -130,13 +207,13 @@
 
                 <p class="card-text"><small class="text-muted">Author-Poet-Singer</small></p>
                     <!-- Button to Open the Modal -->
-<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">
+  <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">
     Delete Card
   </button>
-  <!-- The Modal -->
-  <div class="modal" id="myModal">
-    <div class="modal-dialog">
-      <div class="modal-content">
+   <!-- The Modal -->
+    <div class="modal" id="myModal">
+      <div class="modal-dialog">
+       <div class="modal-content">
         <!-- Modal Header -->
         <div class="modal-header">
           <h4 class="modal-title">Delete</h4>
@@ -154,6 +231,19 @@
       </div>
     </div>
   </div> <!--last-->
+
+   <!--Drop down button-->
+   <div class="dropdown">
+    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+      Dropdown button
+    </button>
+    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+      <a class="dropdown-item" href="#">● User’s home address: 22 sakwatsha street, Philliphi </a>
+      <a class="dropdown-item" href="#">● User’s next of kin name: Asanda</a>
+      <a class="dropdown-item" href="#">● User’s next of kin relationship: Mother</a>
+      <a class="dropdown-item" href="#">● User’s next of kin cellphone number and email: 075 225 6669    Email:asanda@gmail.com.</a>
+    </div>
+  </div>
 
 
               </div>
@@ -177,12 +267,12 @@
 
                 <p class="card-text"><small class="text-muted">Author-Poet-Actor</small></p>
                     <!-- Button to Open the Modal -->
-<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">
+  <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">
     Delete Card
-  </button>
-  <!-- The Modal -->
-  <div class="modal" id="myModal">
-    <div class="modal-dialog">
+   </button>
+   <!-- The Modal -->
+    <div class="modal" id="myModal">
+     <div class="modal-dialog">
       <div class="modal-content">
         <!-- Modal Header -->
         <div class="modal-header">
@@ -201,6 +291,19 @@
       </div>
     </div>
   </div> <!--last-->
+
+   <!--Drop down button-->
+   <div class="dropdown">
+    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+      Dropdown button
+    </button>
+    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+      <a class="dropdown-item" href="#">● User’s home address: 22 sakwatsha street, Philliphi</a>
+      <a class="dropdown-item" href="#">● User’s next of kin name: Asanda</a>
+      <a class="dropdown-item" href="#">● User’s next of kin relationship: Aunt</a>
+      <a class="dropdown-item" href="#">● User’s next of kin cellphone number and email: 075 225 6669    Email:asanda@gmail.com.</a>
+    </div>
+  </div>
 
 
               </div>
@@ -222,10 +325,10 @@
 
                   <p class="card-text"><small class="text-muted">Author-Poet-Photographer</small></p>
                       <!-- Button to Open the Modal -->
-<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">
-    Delete Card
-  </button>
-  <!-- The Modal -->
+  <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">
+     Delete Card
+   </button>
+   <!-- The Modal -->
   <div class="modal" id="myModal">
     <div class="modal-dialog">
       <div class="modal-content">
@@ -246,6 +349,19 @@
       </div>
     </div>
   </div> <!--last-->
+
+   <!--Drop down button-->
+   <div class="dropdown">
+    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+      Dropdown button
+    </button>
+    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+      <a class="dropdown-item" href="#">● User’s home address: 22 sakwatsha street, Philliphi </a>
+      <a class="dropdown-item" href="#">● User’s next of kin name: Asanda</a>
+      <a class="dropdown-item" href="#">● User’s next of kin relationship: Sister</a>
+      <a class="dropdown-item" href="#">● User’s next of kin cellphone number and email: 075 225 6669    Email:asanda@gmail.com.</a>
+    </div>
+  </div>
 
 
                 </div>
